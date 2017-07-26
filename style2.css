@@ -1,0 +1,30 @@
+/*Pagina creada por Cristian Lopez/ 0900-14-693 */
+.boton{
+    font-size: 10px;
+    font-family: Verdana, Helvetica;
+    font-weight: bold;
+    color: white;
+    background-color: #001FFF;
+    border: 1px;
+    width: 80px;
+    height: 50px;
+}
+
+form{
+    border: 7px solid #FFFF00;
+    margin: 70px auto;
+    width: 400px;
+    border-radius: 7px;
+    box-shadow: insert 0 0 11px #00FF00;
+    background: #1BFA5E;
+}
+
+form h1{
+    text-align: center;
+    font-family: "Consolas", cursive;    
+}
+
+form input{
+    width: 300px;
+    margin: 20px auto;
+}
