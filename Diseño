@@ -1,0 +1,456 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="aqui toda nuestra descripcion">
+		<meta name="keywords" content="aqui, palabras, clave">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		
+
+
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/slides.min.jquery.js"> </script>
+
+		<script>
+			$(function(){
+				$("#slides").slidesjs();
+			});
+		</script>
+
+
+
+
+
+		<title>Proyecto 1 </title>
+	</head>
+
+
+	<body>
+
+		<header>
+			<div id="subheader">
+				<div id="logotipo"><p><a href="">Grupo 3</div>
+				<nav>
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+		</header>
+
+		<section id="wrap">
+			<section id="main">
+
+			                
+
+
+				<section id="slideshow">
+					<div class="slides_container">
+						<div><a href="#"><img src="(imagenes/UMG1.jpeg)"/></a></div>
+						<div><a href="#"><img src="(imagenes/tecnologia1.png)"/></a></div>
+						<div><a href="#"><img src="(imagenes/ingenieria1.png)"/></a></div>
+					</div>
+
+				</section>
+				          
+
+
+
+
+				<section id="bienvenidos">
+					<article>
+						<hgroup><h3>Proyecto 1 Desarrollo Web</h3></hgroup>
+
+						<p>
+							<ul>
+
+							<li> aqui va la fecha y hora </lis>
+								
+							</ul>
+						</p>
+					</article>					
+				</section>
+
+				<section id="contenido">
+					<article>
+						<hgroup><h2 class="titulo"> Serie Fibonacci </h2> </hgroup>
+						<img class="thumb" src="imagenes/fibo.jpg" alt="Thumbail #1">
+					</article>
+
+					<article>
+						<hgroup><h2 class="titulo"> Captura un texto y lo convierta en un arreglo </h2> </hgroup>
+						<img class="thumb" src="imagenes/texto.png" alt="Thumbail #2">						
+					</article>
+
+					<article>
+						<hgroup><h2 class="titulo"> Recibe dos parámetros </h2> </hgroup>
+						<img class="thumb" src="imagenes/parametro.png" alt="Thumbail #3">
+					</article>
+				</section>
+
+				<aside>
+					<section class="widget">
+						<h3>Curso de Desarrollo web</h3>
+						<ul>
+							<li><a href="https://docs.google.com/document/d/18AGuJhRreDVaC6XQoWdomLGtH3d4OqJXsF01GFEKeZg/edit">Segundo semestre 2017</a></li>
+						</ul>						
+					</section>
+				</aside>
+			</section>
+
+			<footer>
+				<section id="Integrantes">
+					<article>
+						<hgroup><h3>Integrantes</h3></hgroup>
+						<p>
+							<li>Maite</li>
+							<li>Dagoberto</li>
+							<li>Christian</li>
+							<li>Gerson</li>
+							<li>Edgar</li>
+
+						</p>
+					</article>
+					
+				</section>
+
+				<section id="redes-s">
+					<div class="email"><a href="https://www.google.com/gmail/"></a></div>
+					<div class="Classroom"><a href="https://classroom.google.com/"></a></div>
+					<div class="UMG"><a href="https://www.umg.edu.gt/"></a></div>
+					<div class="Notas"><a href="https://www.umg.edu.gt/informacion-general-y-procedimientos/consulta-de-notas/"></a></div>
+				</section>
+
+			</footer>
+
+			<div id="copyrigth"><p>Pagina Web realizada por los alumnos del Grupo 3 Desarrollo web UMG</p></div>
+
+			
+		</section>
+
+	</body>
+</html>
+
+
+@import url('reset.css');
+@import url('fuentes.css');
+
+/*----Estilos Generales----*/
+
+body{
+	background: #5d8d2d;
+	font-family: Arial Helvetica, Sans-serif;
+}
+a{ text-decoration: none; color: #fff;}
+
+a:hover {text-decoration: underline;}
+
+#wrap {
+	width: 1000px;
+	margin: auto;
+	clear: both;
+}
+/*----Heders----*/
+
+header {
+	width: 100%;
+	float: left;
+	/* Permalink - use to edit and share this gradient: 
+	http://colorzilla.com/gradient-editor/#ffffff+1,e4e0e0+100&1+0,1+62,0.7+68,0+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(238,236,236,1) 62%, rgba(236,234,234,0.7) 68%, rgba(228,224,224,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(238,236,236,1) 62%,rgba(236,234,234,0.7) 68%,rgba(228,224,224,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(238,236,236,1) 62%,rgba(236,234,234,0.7) 68%,rgba(228,224,224,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#00e4e4e0',GradientType=0 ); /* IE6-9 */
+box-shadow: 0px 3px 5px #000;
+-moz-box-shadow: 0px 3px 5px #000;
+-webkit-box-shadow: 0px 3px 5px #000;
+}
+#subheader{
+	width: 960px;
+	margin: auto;
+}
+#logotipo {
+	float: left;
+	width: 300px;
+	padding: 10px 0px;
+}
+#logotipo a{
+	font-family: sourcesans-light;
+	font-size: 40px;
+	color: #000;
+}
+#logotipo a:hover {text-decoration: none}
+
+/*menu*/
+header #subheader nav {
+	float: left;
+	width: 660px;
+	padding: 30px 0px;
+	text-align: right;
+}
+
+header #subheader nav ul li {
+	display: inline;
+	font-family: sourcesans;
+}
+
+header #subheader nav ul li a{
+	color: #000;
+	font-size: 18px;
+	padding: 10px;
+		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+}
+header #subheader nav ul li a:hover {
+	color: #fff;
+	background: #1798af;
+	text-decoration: none;
+}
+/*--- MAIN---*/
+
+#main {
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+	float: left;
+}
+
+/*Slideshow*/
+
+#slideshow {
+	width: 920px;
+	height: 260px;
+	float: left;
+	background: #000;
+	border: solid 20px #fff;
+	margin-bottom: 10px;
+}
+
+/* a partir de aqui no funciona.
+#slideshow .pagination {
+	margin:26px auto;
+	width: 100px;
+}
+
+#slideshow .pagination  li {
+	float: left;
+	margin: 0px 5px;
+	list-style: none;
+}
+
+#slideshow .pagination li a{
+	display:block;
+	width: 12px;
+	height: 0px;
+	padding-top: 12px;
+	background: #fff;
+	float: left;
+	overflow: hidden;
+	border-radius: 10px;
+	 -moz-border-radius: 10px;
+	 -webkit-border-radius: 10px; 
+}
+
+#slideshow img {
+	width: 920px;
+	height: 260px;
+
+}
+
+#slideshow .pagination li.current a{
+	background: #1798AF;
+}   */
+
+/*--- Bienvenidos---*/
+#bienvenidos {
+	width: 920px;
+	float: left;
+	padding: 20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+	background: #fefcea; /* Old browsers */
+	background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+	margin: 20px 0px;
+	border-radius: 5px;
+    	-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	box-shadow: 0px 2px 2px #000;
+		-moz-box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 2px #000;
+}
+#bienvenidos article h3 {
+	font-family: sourcesans-light;
+	color: #752201;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+#bienvenidos article {
+	color: #752205;
+	line-height: 27px;
+}
+
+/*--- contenido***/
+
+#contenido {
+	width: 620px;
+	float:left; 
+}
+
+#contenido article {
+	float: left;
+	margin-bottom: 20px;
+}
+
+#contenido article .titulo {
+	font-size: 22px;
+	font-family: sourcesans;
+	color: #fff;
+}
+
+#contenido article .thumb {
+	width: 220px;
+	height: 150px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+#contenido article >p {
+	color: #8c8c8c;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 27px;
+
+}
+
+/*---sidebar--*/
+aside {
+	width: 220px;
+	float: left;
+	margin-left: 20px:
+	background:#4d78b3;
+	padding: 10px 10px 0px 10px;
+	border-radius: 5px;
+ 		-moz-border-radius: 5px;
+ 		-webkit-border-radius: 5px;
+ 	box-shadow: 0px 2px 2px #000;
+ 		-moz-box-shadow: 0px 2px 2px #000;
+ 		-webkit-box-shadow: 0px 2px 2px #000;
+}
+
+aside .widget {
+	margin-bottom: 10px;
+	float: left;
+
+}
+
+aside .widget > h3 {
+	background: #fff;
+	color: #4d78b3;
+	width: 220px;
+	padding: 10px 0px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+
+aside .widget a {color:#fff;}
+aside .widget ul li {margin-bottom: 5px;}
+aside .widget img {width: 220px;}
+
+/*--footer*/
+footer{
+	width: 100%;
+	float: left;
+	clear: both;
+	box-shadow: 0px 2px 2px #000;
+		-moz-box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 2px #000;
+	border-radius: 5px;
+	 	-moz-border-radius: 5px;
+	 	-webkit-border-radius: 5px;
+
+	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f2f2f+0,2989d8+50,207cca+51,242424+94 */
+	background: rgb(47,47,47); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(36,36,36,1) 94%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(36,36,36,1) 94%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(47,47,47,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(36,36,36,1) 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#242424',GradientType=0 ); /* IE6-9 */
+}
+
+footer section {
+	width: 440px;
+	float:left;
+	padding: 20px;
+}
+
+footer #Integrantes {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 16;
+	color: #FCE15A;
+	text-align: justify;
+	line-height: 20PX;
+}
+
+footer #Integrantes h3 {
+	font-family: sourcesans-light;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+footer #redes-s > div {
+	width: 218px;
+	height: 60px;
+	float: left;
+	background: #ff8000;
+	opacity: 0.6;
+}
+
+footer #redes-s > div a{
+	width: 220px;
+	height: 60px;
+	display: inline-block;
+}
+
+footer #redes-s .email {
+	background: url(../imagenes/mail.png);
+	margin-bottom: 10px;
+	margin-right: 2px;
+}
+footer #redes-s .Classroom {
+	background: url(../imagenes/classroom.png);
+	margin-bottom: 10px;
+	
+}
+footer #redes-s .UMG {
+	background: url(../imagenes/umg.png);
+	margin-right: 2px;
+
+}
+footer #redes-s .Notas {
+	background: url(../imagenes/notas.png);
+}
+
+footer #redes-s > div:hover {
+	opacity: 1;
+}
+
+#copyrigth {
+	float: left;
+	width: 960px;
+	margin: 10px 0px;
+}
+
+#copyrigth p {
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
