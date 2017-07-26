@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Serie de Fibonacci</title>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body background="img/fibonacci_u.jpg" onload="document.formFibonacci.limite_valor.focus()">
+    <div>
+        <section>
+            <form id="formFibonacci" name="formFibonacci">
+                <h1>Serie Fibonacci</h1>
+                <p><input type="text" name="limite" id="limite_valor" placeholder="Ingrese numero limite"/>            
+                <p><button type="button" onclick="fibonacci()">Ver Serie</button> 
+                <button type="button" onclick="limpiarCajasFibonacci()">Limpiar</button>
+            </form>                
+        </section>
+        <section>
+            <h2>Serie resultado</h2>            
+            <input style="color:gold" type="text" name="salida" id="serieSalida"/>            
+        </section>
+    </div>        
+    </body>    
+</html>

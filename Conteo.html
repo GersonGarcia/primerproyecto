@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conteo de Caracteres</title>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style2.css"/>
+    </head>
+    <body background="img/pixeles.jpg" onload="document.formCaracteres.cadenaContar.focus()">
+        <div>
+            <form id="formCaracteres" name="formCaracteres" class="form">
+                <h1>Numero de Caracteres</h1>
+                <p><input type="text" name="cadena" id="cadenaContar" placeholder="Ingrese la cadena de caracteres"/>
+                <button type="button" onclick="contarCaracteres()" class="boton">Contar Caracteres</button>
+                <button type="button" onclick="limpiarCajaConteo()">Limpiar</button></p>
+            </form>
+        </div>
+    </body>
+</html>
