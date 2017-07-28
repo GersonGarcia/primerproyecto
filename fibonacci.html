@@ -6,22 +6,29 @@
 		<meta name="keywords" content="aqui, palabras, clave">
 		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>		
 
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/slides.min.jquery.js"> </script>
-
-		<script>
-			$(function(){
-				$("#slides").slidesjs();
-			});
-		</script>
+		<link rel="stylesheet" href="flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	touch: true,
+    	pauseOnAction: false,
+    	pauseOnHover: false,
+    });
+  });
+</script>
 
 		
 		<script src="js/scripts.js"></script>
 
+		
 
+<div id="contenedor"></div>
 		<title>Proyecto 1 </title>
 	</head>
-	<body>
+	<body onload="javascript:hora()">
 
 		<header>
 			<div id="subheader">
@@ -39,11 +46,28 @@
 		<section id="wrap">
 			<section id="main">			               
 				<section id="slideshow">
-					<div class="slides_container">
-						<div><a href="#"><img src="(imagenes/UMG1.jpeg)"/></a></div>
-						<div><a href="#"><img src="(imagenes/tecnologia1.png)"/></a></div>
-						<div><a href="#"><img src="(imagenes/ingenieria1.png)"/></a></div>
-					</div>
+					<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="imagenes/1.jpg" alt="" width="920" height="260">
+				<section class="flex-caption">
+					
+				</section>
+			</li>
+			<li>
+				<img src="imagenes/2.jpg" alt="" width="920" height="260">
+				<section class="flex-caption">
+					
+				</section>
+			</li>
+			<li>
+				<img src="imagenes/3.jpg" alt="" width="920" height="260">
+				<section class="flex-caption">
+					
+				</section>
+			</li>
+		</ul>
+	</div>
 
 				</section>				         
 				<section id="bienvenidos">
@@ -53,7 +77,7 @@
 						<p>
 							<ul>
 
-							<li> aqui va la fecha y hora </lis>
+							<li> <h2><div id='contenedorHora'></div></h2> </li>
 								
 							</ul>
 						</p>
@@ -73,7 +97,7 @@
         				<section>
         					<br><br>
 		            		<h2>Serie resultado</h2>            
-		            		<input style="color:gold" type="text" name="salida" id="serieSalida" size="57" readonly="readonly"/>            
+		            		<input style="color:black" type="text" name="salida" id="serieSalida" size="57" readonly="readonly"/>            
 		        		</section>
 		        		<br><br><br>
 					</article>
